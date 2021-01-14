@@ -19,7 +19,6 @@ public class PlaygameController {
     public AnchorPane right;
     @FXML
     public ImageView[] cards = new ImageView[25];
-    App main;
 
     public void setNames(Boolean p1Turn, Boolean endGame) {
         if (SetplayersController.name1.length() > 0) {
@@ -62,17 +61,17 @@ public class PlaygameController {
         cards[a].setFitHeight(110);
         if (y == 50) {
             cards[a].setOnMouseClicked(e -> {
-                main.giveCard(a);
+                App.giveCard(a);
             });
         }
         if (y == 170) {
             cards[a].setOnMouseClicked(e -> {
-                main.giveCard(a);
+                App.giveCard(a);
             });
         }
         if (y >= 290 && a == 23) {
             cards[a].setOnMouseClicked(e -> {
-                main.takeCard();
+                App.takeCard();
             });
         }
 
@@ -83,11 +82,11 @@ public class PlaygameController {
     }
 
     public void again() {
-        main.startGame();
+        App.startGame();
     }
 
     public void newPlayers() {
-        main.showSetPlayers();
+        App.showSetPlayers();
     }
 
     //public void hideCard(int i){

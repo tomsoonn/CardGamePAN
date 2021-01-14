@@ -6,11 +6,9 @@ import main.java.app.App;
 
 public class StartpageController {
 
-    private App main;
-
     @FXML
     private void setPlayers() {
-        main.showSetPlayers();
+        App.showSetPlayers();
     }
 
     @FXML
