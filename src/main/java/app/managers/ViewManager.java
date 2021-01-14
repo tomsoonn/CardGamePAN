@@ -5,8 +5,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import main.java.app.model.Game;
 import main.java.app.controllers.PlaygameController;
+import main.java.app.model.Game;
 
 import java.io.IOException;
 
@@ -68,7 +68,7 @@ public class ViewManager {
         }
     }
 
-    private static Object loadFXML (String name) {
+    private static Object loadFXML(String name) {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(main.java.app.App.class.getResource(name));
         try {

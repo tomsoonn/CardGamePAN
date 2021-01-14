@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-
-<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.controllers.SetplayersController">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1"
+            fx:controller="main.java.app.controllers.SetplayersController">
     <center>
         <AnchorPane BorderPane.alignment="CENTER">
             <children>
                 <ImageView pickOnBounds="true" smooth="false">
                     <image>
-                        <Image url="@../cards/tlo.jpg" />
+                        <Image url="@../cards/tlo.jpg"/>
                     </image>
                 </ImageView>
                 <Label layoutX="330.0" layoutY="166.0" text="Player 1:" textFill="WHITE">
                     <font>
-                        <Font name="System Bold Italic" size="15.0" />
+                        <Font name="System Bold Italic" size="15.0"/>
                     </font>
                 </Label>
                 <Label layoutX="330.0" layoutY="242.0" text="Player 2:" textFill="WHITE">
                     <font>
-                        <Font name="System Bold Italic" size="15.0" />
+                        <Font name="System Bold Italic" size="15.0"/>
                     </font>
                 </Label>
-                <TextField fx:id="player1" layoutX="286.0" layoutY="196.0" style="-fx-background-radius: 10;" />
-                <TextField fx:id="player2" layoutX="287.0" layoutY="270.0" style="-fx-background-radius: 10;" />
-                <Button layoutX="324.0" layoutY="364.0" mnemonicParsing="false" onAction="#startGame" prefHeight="31.0" prefWidth="73.0" text="Start" />
+                <TextField fx:id="player1" layoutX="286.0" layoutY="196.0" style="-fx-background-radius: 10;"/>
+                <TextField fx:id="player2" layoutX="287.0" layoutY="270.0" style="-fx-background-radius: 10;"/>
+                <Button layoutX="324.0" layoutY="364.0" mnemonicParsing="false" onAction="#startGame" prefHeight="31.0"
+                        prefWidth="73.0" text="Start"/>
             </children>
         </AnchorPane>
     </center>

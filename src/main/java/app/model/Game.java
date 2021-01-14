@@ -17,6 +17,16 @@ public class Game {
         this.player2 = p2;
     }
 
+    public static void main(String[] args) {
+
+        Game game = new Game("Tomek", "Daniel");
+
+        game.dealCards();
+        System.out.println(game);
+        game.play();
+        System.out.println(game);
+    }
+
     public void dealCards() {
         Deck deck = new Deck();
         deck.createFullDeck();
@@ -92,10 +102,6 @@ public class Game {
         p1Turn = !p1Turn;
     }
 
-    public void setEndGame(Boolean endGame) {
-        this.endGame = endGame;
-    }
-
     public Player getPlayer1() {
         return player1;
     }
@@ -114,6 +120,10 @@ public class Game {
 
     public Boolean getEndGame() {
         return endGame;
+    }
+
+    public void setEndGame(Boolean endGame) {
+        this.endGame = endGame;
     }
 
     @Override
@@ -138,15 +148,5 @@ public class Game {
             else table.addCard(y);
             counter++;
         }
-    }
-
-    public static void main(String[] args) {
-
-        Game game = new Game("Tomek", "Daniel");
-
-        game.dealCards();
-        System.out.println(game);
-        game.play();
-        System.out.println(game);
     }
 }
