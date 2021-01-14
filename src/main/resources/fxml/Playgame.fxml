@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.controllers.PlaygameController">
+    <center>
+        <AnchorPane prefHeight="700.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <children>
+                <SplitPane dividerPositions="0.21042084168336672" prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: #99fff6;">
+                            <children>
+                                <Label fx:id="name1" layoutX="15.0" layoutY="50.0" prefHeight="50.0" prefWidth="182.0" text="Player1:" />
+                                <Label fx:id="name2" layoutX="15.0" layoutY="170.0" prefHeight="50.0" prefWidth="182.0" text="Player2:" />
+                                <Label fx:id="name11" layoutX="15.0" layoutY="290.0" prefHeight="50.0" prefWidth="100.0" text="Table:" />
+                                <Button layoutX="53.0" layoutY="508.0" mnemonicParsing="false" onAction="#again" prefHeight="31.0" prefWidth="85.0" text="Again" />
+                                <Button layoutX="53.0" layoutY="619.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="85.0" text="Exit" />
+                                <Label fx:id="turn" layoutX="15.0" layoutY="400.0" prefHeight="50.0" prefWidth="183.0" text="Turn:">
+                                    <font>
+                                        <Font name="System Bold Italic" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Button layoutX="53.0" layoutY="562.0" mnemonicParsing="false" onAction="#newPlayers" prefHeight="31.0" prefWidth="85.0" text="New players" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="right" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: #99ffa1;">
+                            <children>
+                                <TextArea editable="false" layoutX="11.0" layoutY="535.0" prefHeight="150.0" prefWidth="700.0" text="Zasady:&#10;1. Zaczyna 9 kier i nie można jej wziąć.&#10;2. Gracz może w swoim ruchu wyłożyć karte lub wziąć 3 karty ze stołu.&#10;(jeżeli jest mniej to wszystkie poza 9 kier)&#10;3. Nie można wyłożyć katy niższej niż ta na stole.&#10;4. Aby wygrać należy pozbyć się wszystkich swoich kart." />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
