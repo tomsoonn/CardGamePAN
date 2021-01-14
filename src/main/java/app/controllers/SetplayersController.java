@@ -14,9 +14,6 @@ public class SetplayersController {
     public TextField player1;
     @FXML
     public TextField player2;
-    App main;
-    @FXML
-    PlaygameController play;
 
     public static String getName1() {
         return name1;
@@ -35,7 +32,7 @@ public class SetplayersController {
     private void startGame() throws InterruptedException, IOException {
         setNames();
 
-        main.startGame();
+        App.startGame();
 
     }
 

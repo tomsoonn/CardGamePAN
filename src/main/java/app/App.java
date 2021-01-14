@@ -24,6 +24,11 @@ public class App extends Application {
         showPlayGame(game);
     }
 
+    public static void takeCard() {
+        game.takeCardsFromTable();
+        showPlayGame(game);
+    }
+
     private static void showStartPage() {
         ViewManager.showStartPage();
     }
@@ -38,11 +43,6 @@ public class App extends Application {
 
     public static void startApp() {
         launch();
-    }
-
-    public void takeCard() {
-        game.takeCardsFromTable();
-        showPlayGame(game);
     }
 
     @Override
